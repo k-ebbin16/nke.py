@@ -1,0 +1,17 @@
+body
+    .container
+        header
+
+            img(logo)
+
+            nav
+                ul
+                    li
+                    li
+                    li
+            
+            button.btn
+        
+        sec.hero {
+            
+        }

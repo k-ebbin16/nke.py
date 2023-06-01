@@ -1,13 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
+
     <title>Document</title>
+
 </head>
+
 <body>
     
+    <div class="container">
+
+        <div class="line"></div>
+
+        <header>
+
+            <img src="images/logo.svg" alt="logo">
+
+            <nav>
+                <ul>
+                    <li><a href="#hero">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                </ul>
+            </nav>
+
+            <button class="btn"><a href="#lets-talk">LET'S TALK</a></button>
+
+        </header>
+
+        <!-- //////////////////////////////////////////////////////////////////////////// -->
+
+        <section class="hero" id="hero">
+
+            <div class="hero-content">
+
+                <h2>Hello___<span> &lt;br&gt; </span></h2>
+                <h1>I'm <span class="multitext"></span></h1>
+
+                <div class="about-info">
+
+                    <div class="about-text">
+                        <div class="about-side-bar"></div>
+                        <p><div class="inner-text">I invite you to explore my portfolio, where you will find a curated selection of my finest work. Each project represents a blend of my technical expertise, creative vision, and passion for delivering exceptional results. I hope that my portfolio inspires you and gives you a glimpse into my professional journey.</div></p>
+                        
+                    </div>
+    
+                </div>
+
+            </div>
+
+            <div class="bg-fade" style="background-image: url(./images/laptop1.jpeg)"></div>
+            <div class="bg-fade" style="background-image: url(./images/cd2.jpg)"></div>
+            <div class="bg-fade" style="background-image: url(./images/keyb1.jpg)"></div>
+            <div class="bg-fade" style="background-image: url(./images/cd1.jpg)"></div>
+            <div class="bg-fade" style="background-image: url(./images/keyb2.jpg)"></div>
+
+        </section>
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+        <section class="about" id="about">
+
+            <h2 class="bg-text">ABOUT</h2>
+
+            <div class="content-header">
+                <h2>ABOUT<span>.html</span></h2>
+            </div>
+
+            <div class="about-info">
+
+                <div class="about-text">
+                    <div class="about-side-bar"></div>
+                    <div class="inner-text">
+                        <p>Welcome to my portfolio! My name is <i>Nana Kwamina Ebbin</i>, and I am thrilled to have you here. I am a passionate <i>Programmer and Web developer</i> who is deeply committed to AI, Machine Learning ad Web Design. With a solid foundation in HTML, CSS and Python programming language, I have cultivated a diverse skill set and a keen eye for web architecture and automation</p>
+                        <p>I approach every project with an unwavering dedication to excellence. I thrive in dynamic and challenging environments, where I can leverage my expertise to drive meaningful impact. I am always eager to explore new frontiers and push the boundaries of what is possible.</p>
+                        <p>Collaboration key in my work philosophy. I believe that the most innovative and impactful outcomes are achieved through the power of collective intelligence. I love working alongside talented professionals from different disciplines, as their unique perspectives enhance the quality of our work and lead to groundbreaking solutions.</p>
+                        <p>My creative flair is complemented by a strong analytical mindset. I enjoy marrying the art of design with data-driven insights, ensuring that every decision I make is backed by rigorous research and analysis. This holistic approach enables me to create solutions that are not only visually captivating but also strategically sound.</p>
+                        <p>Beyond my professional pursuits, I am an avid explorer of diverse technological fields including robotics and Artificail Intelligence. These fields fuel my creativity, foster personal growth, and provide me with a fresh perspective when approaching my work. I strongly believe in the importance of maintaining a healthy work-life balance, as it ultimately enhances my productivity and overall well-being.</p>
+                    </div>
+                
+                </div>
+
+                <div class="skills-col">
+
+                    <div class="skills-header">
+                        <h2>SKILLS</h2>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+    </div>
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        
+        var typingEffect = new Typed(".multitext", {
+            strings : ["Kwamina.", "a Programmer.", "a Web Developer."],
+            loop : true,
+            typeSpeed : 90,
+            backSpeed : 70,
+            backDelay : 1400
+        })
+
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+        
+            // Store hash
+            var hash = this.hash;
+        
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 900, function(){
+        
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+            });
+            } // End if
+        });
+        });
+    </script>
+
+
 </body>
 </html>
