@@ -16,10 +16,22 @@
 
     .container .about .about-info .skills-col .skills-header h2 {font-size: 1.2rem;}
 
-    .container .about .about-info .skills-col .skill-set
+    .container .about .about-info .skills-col .skill-set h3 {font-size: 1.2rem;}
     
     .container footer .main-footer {
         margin: 3em 0 2em 5em;
     }
 
 }
+
+/* @media screen and (max-width: 375px) {
+
+    .container header {
+        padding: 0 1em;
+    }
+
+    .btn {
+        padding: .5em 1em;
+        font-size: ;
+    }
+} */
