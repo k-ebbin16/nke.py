@@ -85,17 +85,6 @@
     position: relative;
 }
 
-.line {
-    position: absolute;
-    left: 10%;
-    background-color: #753232;
-    width: 2px;
-    height: 90%;
-    box-shadow: 0px 4px 15px 2px rgba(0,0,0,0.66);
-    bottom: 0;
-    opacity: .8;
-    z-index: 1;
-}
 
 .container header {
     width: 100%;
@@ -452,7 +441,7 @@
 
 .container .about .about-info .skills-col .skill-set {
     width: 85%;
-    height: 20%;
+    height: 15%;
     display: grid;
     row-gap: .5em;
     background-color: #181818c1;
@@ -487,7 +476,7 @@
 
 .container .about .about-info .skills-col .skill-set .skill {
     color: #fff;
-    font-size: .85rem;
+    font-size: .7rem;
     font-family: var(--body);
     font-weight: 700;
     margin: 1em 2em;
@@ -533,7 +522,6 @@
 }
 
 .container .about .about-info .skills-col .skill-set .progress-bar .inner-bar {
-    width: 0;
     height: 100%;
     display: flex;
     justify-content: flex-end;
@@ -550,27 +538,27 @@
     box-shadow: inset 0 0 7px 5px #fff;
 }
 
-.container .about .about-info .skills-col .skill-set:hover .skill h2 {
+.container .about .about-info .skills-col .skill-set .skill h2 {
     letter-spacing: 5px;
 }
 
-.container .about .about-info .skills-col .skill-set:hover .progress-bar {
+.container .about .about-info .skills-col .skill-set .progress-bar {
     width: 85%;
 }
 
-.container .about .about-info .skills-col .skill-set:hover .progress-bar .html {
+.container .about .about-info .skills-col .skill-set .progress-bar .html {
     width: 85%;
 }
 
-.container .about .about-info .skills-col .skill-set:hover .progress-bar .css {
+.container .about .about-info .skills-col .skill-set .progress-bar .css {
     width: 65%;
 }
 
-.container .about .about-info .skills-col .skill-set:hover .progress-bar .python {
+.container .about .about-info .skills-col .skill-set .progress-bar .python {
     width: 90%;
 }
 
-.container .about .about-info .skills-col .skill-set:hover .progress-bar .javascript {
+.container .about .about-info .skills-col .skill-set .progress-bar .javascript {
     width: 15%;
 }
 
@@ -604,7 +592,7 @@
 }
 
 .container .projects .projects-wrapper .img-tile {
-    width: 65%;
+    width: 100%;
     height: 60vh;
     display: inline-block;
     background-color: #b500005a;
@@ -645,7 +633,7 @@
     position:absolute;
     top:0;
     left:0;
-    filter: blur(1px) grayscale(100%);
+    filter: blur(3px) grayscale(100%);
     z-index: 0;
     transition: all 0.4s ease-out;
 }
@@ -693,7 +681,7 @@
 
 .container .projects .projects-wrapper .img-tile:hover img {
     opacity: .5;
-    filter: blur(3px) grayscale(0);
+    filter: blur(1px) grayscale(0);
 }
 
 .container .projects .projects-wrapper .img-tile:hover .description h2 {
@@ -706,7 +694,7 @@
 }
 
 .container .projects .projects-wrapper .img-tile .description h3 a:hover {
-    color: #3a0000;
+    color: #ff7878;
 }
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////// */
