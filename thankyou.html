@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            display: grid;
+            place-items: center;
+            background: -webkit-linear-gradient(-45deg, #1f1616, #251010, #4e1c15, #3a0505);
+            background-size: 400% 400%;
+            animation: animation 15s ease infinite;
+        }
+
+        .thank-you {
+            margin: auto;
+            width: 50%;
+            height: 50%;
+            border-radius: 50px;
+            box-shadow: 0 0 15px 5px#1f1616;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            background: -webkit-linear-gradient(top,#790600, #470000);
+        }
+
+        h1 {
+            font-size: 4rem;
+            color: #ee9696;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.5rem;
+            color: aliceblue;
+        }
+
+        @keyframes animation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            color: #a0a0a0;
+            transition: all 500ms ease-in-out;
+        }
+
+        a:hover {
+            color: #d3d1d1;
+        }
+
+        @media screen and (max-width: 600px) {
+            .thank-you {
+                width: 70%;
+                height: 40%;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                text-align: center;
+                font-size: .75rem;
+                color: aliceblue;
+            }
+        }
+        
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="thank-you">
+            <h1>Email sent</h1>
+            <p>Thank you for sending your email! <br> I will reply as soon as i get the chance.👍 😊</p>
+            <a href="index.html">Back to page -></a>
+        </div>
+    </div>
+</body>
+</html>
