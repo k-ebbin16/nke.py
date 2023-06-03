@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="media-queries.css">
 
@@ -24,14 +25,22 @@
             <img src="images/logo.svg" alt="logo">
 
             <nav>
+
+                <input type="checkbox" id="check">
+                <label for="check">
+                    <i class="fa fa-bars" id="btn"></i>
+                    <i class="fa fa-times" id="cancel"></i>
+                </label>
+
                 <ul>
                     <li><a href="#hero">HOME</a></li>
                     <li><a href="#about">ABOUT</a></li>
                     <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#lets-talk">LET'S TALK</a></li>
                 </ul>
             </nav>
 
-            <button class="btn"><a href="#lets-talk">LET'S TALK</a></button>
+            
 
         </header>
 
@@ -107,7 +116,7 @@
                         
                         <h3>85<span>%</span></h3>
                         
-                        <div class="progress-bar"><div class="inner-bar html"><span></span></div></div>
+                        <div class="progress-bar"><div class="inner-bar html"></div><span></span></div>
 
                     </div>
 
@@ -119,7 +128,7 @@
 
                         <h3>65<span>%</span></h3>
 
-                        <div class="progress-bar"><div class="inner-bar css"><span></span></div></div>
+                        <div class="progress-bar"><div class="inner-bar css"></div><span></span></div>
 
                     </div>
 
@@ -133,7 +142,7 @@
 
                         <h3>90<span>%</span></h3>
 
-                        <div class="progress-bar"><div class="inner-bar python"><span></span></div></div>
+                        <div class="progress-bar"><div class="inner-bar python"></div><span></span></div>
 
                     </div>
 
@@ -147,7 +156,7 @@
 
                         <h3>15<span>%</span></h3>
 
-                        <div class="progress-bar"><div class="inner-bar javascript"><span></span></div></div>
+                        <div class="progress-bar"><div class="inner-bar javascript"></div><span></span></div>
 
                     </div>
 
@@ -180,7 +189,7 @@
 
                 <div class="img-tile tile2">
 
-                    <img src="images/huddle.jpg" alt="huddle-webpage">
+                    <a href="https://huddle-res.netlify.app/"><img src="images/huddle.jpg" alt="huddle-webpage"></a>
                     <div class="description">
                         <h2><span>02</span>HUDDLE</h2>
                         <h3><a href="https://github.com/k-ebbin16/fylo-webpage" target="_blank">Source code _></a></h3>
@@ -210,7 +219,7 @@
 
                 <div class="img-tile tile5">
 
-                    <img src="images/fylo.jpg" alt="fylo-webpage">
+                    <a href="https://floy-app.netlify.app/"><img src="images/fylo.jpg" alt="fylo-webpage"></a>
                     <div class="description">
                         <h2><span>05</span>FYLO</h2>
                         <h3><a href="https://github.com/k-ebbin16/fylo-webpage" target="_blank">Source code _></a></h3>
@@ -241,27 +250,27 @@
                             <input type="hidden" name="_subject" value="New submission!">
                             <input type="hidden" name="_next" value="https://email-received.netlify.app/">
                 
-                            <div class="input-container">
+                            <div class="input-container firstname">
                                 <label for="firstname">First Name: </label>
                                 <input type="text" id="firstname" name="First&nbsp;Name" placeholder="First name..." required>
                             </div>
 
-                            <div class="input-container">
+                            <div class="input-container lastname">
                                 <label for="lastname">Last Name: </label>
                                 <input type="text" id="lastname" name="Last&nbsp;Name" placeholder="Last name..." required>
                             </div>
 
-                            <div class="input-container">
+                            <div class="input-container email">
                                 <label for="email">Email: </label>
                                 <input type="email" id="email" name="Email" placeholder="Email Address..." required>
                             </div>
                             
-                            <div class="input-container">
+                            <div class="input-container subject">
                                 <label for="subject">Subject: </label>
                                 <textarea id="subject" name="Subject" placeholder="Subject..." required></textarea>
                             </div>
 
-                            <div class="input-container">
+                            <div class="input-container message">
                                 <label for="msgbox">Message: </label>
                                 <textarea name="Message" id="msgbox" cols="100" rows="10" placeholder="Type message here" required></textarea>
                                 <button class="btn" type="submit">Send</button>
